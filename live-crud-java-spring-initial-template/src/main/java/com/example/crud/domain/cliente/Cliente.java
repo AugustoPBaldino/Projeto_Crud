@@ -81,9 +81,9 @@ public class Cliente {
 
 
     public Cliente(RequestClient requestClient) {
-        this.Nome_Cliente = requestClient.nomeCliente();
-        this.Estado_Civil = requestClient.estadoCivil();
-        this.Situacao_Profissional = requestClient.situacaoProfissional();
+        this.Nome_Cliente = requestClient.nome_cliente();
+        this.Estado_Civil = requestClient.estado_civil();
+        this.Situacao_Profissional = requestClient.situacao_profissional();
         this.Email = requestClient.email();
         this.Apelido = requestClient.apelido();
         this.active = requestClient.active();

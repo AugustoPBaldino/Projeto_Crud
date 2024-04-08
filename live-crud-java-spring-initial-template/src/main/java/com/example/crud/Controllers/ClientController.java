@@ -38,9 +38,9 @@ public class ClientController {
         Optional<Cliente> optionalClient = repository.findById(data.id());
         if (optionalClient.isPresent()) {
             Cliente client = optionalClient.get();
-            client.setNome_Cliente(data.nomeCliente());
-            client.setEstado_Civil(data.estadoCivil());
-            client.setSituacao_Profissional(data.situacaoProfissional());
+            client.setNome_Cliente(data.nome_cliente());
+            client.setEstado_Civil(data.estado_civil());
+            client.setSituacao_Profissional(data.situacao_profissional());
             client.setEmail(data.email());
             client.setApelido(data.apelido());
             return ResponseEntity.ok(client);
